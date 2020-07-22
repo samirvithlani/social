@@ -1,0 +1,12 @@
+<h1>LOGIN PAGE</h1>
+<button type="button" (click)="signinWithFb()">signinWithFb</button>
+<button type="button" (click)="signwithGoogle()">google</button>
+<div *ngIf="user">
+    
+    <h4>{{user.name}}</h4>
+    <img src="{{user.photoUrl}}">
+    <h4>{{user.email}}</h4>
+</div>
+
+<br>
+<button type="button" (click)="signinout()">signout</button>
